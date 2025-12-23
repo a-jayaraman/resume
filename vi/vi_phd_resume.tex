@@ -1,0 +1,312 @@
+\documentclass[letterpaper,10pt]{article}
+
+% --- Packages ---
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{paracol}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{parskip}
+
+% --- DOCUMENT SETUP ---
+% Set margins for the page
+\geometry{
+    left=0.5in,
+    right=0.5in,
+    top=0.6in,
+    bottom=0.6in
+}
+
+% --- Setup ---
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\small\thepage}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-5pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\subsection}{\vspace{-3pt}\scshape\raggedright\normalsize}{}{0em}{}[\color{black}\vspace{-6pt}]
+
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{center}
+    \textbf{\Huge \scshape Vidhata Jayaraman} \\ \vspace{5pt}
+    \small
+    % Using a more compact line for contact info
+    \faIcon{envelope} \href{mailto:vidhata2@illinois.edu}{vidhata2@illinois.edu} $ \cdot $
+    \faIcon{phone-square-alt} 847-420-5370 $ \cdot $
+    \faIcon{safari} \href{https://dxdt14.github.io/}{https://dxdt14.github.io/} $ \cdot $
+    % \faIcon{github} \href{https://github.com/dxdt14}{\underline{github.com/dxdt14}} $ \cdot $
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/vidhata-jayaraman/}{vidhata-jayaraman} $ \cdot $
+    \faIcon{book} \href{https://scholar.google.com/citations?user=f16twSMAAAAJ&hl=en}{Google Scholar}
+\end{center}
+
+\vspace{-3pt}
+
+% \setcolumnwidth{0.5\textwidth, 0.5\textwidth}
+% \setlength{\columnsep}{1.15cm}
+% \begin{paracol}{2}
+    
+    % -------------------- EDUCATION & COURSEWORK --------------------
+    \section{Education}
+    \textbf{University of Illinois Urbana-Champaign (UIUC)} \hfill
+    Anticipated Graduation: May 2026\\ 
+    B.S. in Computer Engineering $|$ B.S. in Mathematics \hfill Distinction: Highest Honors\\
+    GPA: \textit{ 3.97/4.0} $\vert$ \textit{4.0/4.0} \hfill 
+    { \small Dean's List (Top 20\% of Student Body)} \\
+    {\small Thesis: ``Information-theoretic limits of Knowledge Distillation"}\\
+    
+    
+    % \vspace{-3pt}
+    
+    % \switchcolumn
+    % \vspace{-3pt}
+    % \section{Relevant Coursework}
+    % \textbf{Math}: Real Analysis, Linear Algebra, Abstract Algebra, ODEs/PDEs, Complex Analysis, Graph Theory, Probability \& Measure, Algebraic Topology\\
+    % \vspace{3pt}
+    % \textbf{Applied Math/CS}: Optimization, Machine Learning, Quantum Information Theory, Deep Generative Models, Random Processes, Information Theory, Signal Processing\\
+% \end{paracol}
+% \vspace{-3pt}
+\section{Research Interests}
+    Machine Learning, Probability Theory \& Statistics, Information Theory, Optimization, Control Theory, Quantum Information, Uncertainty Quantification\\
+% \vspace{-3pt}
+\section{Relevant Coursework}
+    \textbf{Pure Math}: Real Analysis, Linear Algebra, Abstract Algebra, Ordinary \& Partial Differential Equations, Complex Analysis, Graph Theory, Probability \& Measure, Algebraic Topology\\
+    \vspace{3pt}
+    \textbf{Applied Math/CS}: Machine Learning, Optimization, Deep Generative Models, Random Processes, Information Theory, Analog Signal Processing, Digital Signal Processing, Algorithms \& Models of Computation, Quantum Information Theory\\
+% -------------------- RESEARCH EXPERIENCE --------------------
+\section{Research Experience}
+
+% \textbf{Research with Professor Rayadurgam Srikant} \hfill September 2025 -- Present\vspace{-5pt}
+% \begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+%     \item \textbf{Senior Thesis (Co-advised with Prof. Lav Varshney)}: \textit{Limits of Knowledge Distillation} (Primary researcher).
+%     Analyzing knowledge distillation and model compression to characterize fundamental limits, particularly in LLMs.
+% \end{itemize}
+\textbf{Senior Thesis (Co-advised by Prof. Rayadurgam Srikant and Prof. Lav Varshney)} \hfill September 2025 -- Present
+\begin{itemize}[itemsep=-4pt, parsep=4pt, leftmargin=0.25in]
+    \item \textit{Information-theoretic limits of Knowledge Distillation} (Primary researcher).
+    Developing an information-theoretic framework for knowledge distillation, deriving fundamental limits on student performance with emphasis on LLMs.
+\end{itemize}
+
+\textbf{Research with Professor Lav Varshney} \hfill February 2024 -- Present\vspace{-10pt}
+\subsection{Current Projects}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+    % \item \textbf{Senior Thesis (Co-advised with Prof. Rayadurgam Srikant)}: \textit{Information-theoretic bounds for Knowledge Distillation in LLMs} (Primary researcher). Developing information-theoretic formulations for knowledge distillation to characterize fundamental performance limits, particularly in LLMs.
+    \item \textit{2-stage retrieval in Transformers}: Analyzing an Associative Memory model to explain 2-stage retrieval in Transformers.
+    \item \textit{Visual redundancies in VLMs}: Found redundancy in visual token representations in VLMs and justified their existence rigorously (Publications: \ref{skip-it}, \ref{unmask}).
+    \item (Jan. 2026) \textit{Multimodal Federated Learning}: Will be working with Argonne National Laboratory to improve learning with multimodal data in a federated learning paradigm (i.e., learning from decentralized private data)
+\end{itemize}\vspace{-10pt}
+\subsection{Past Projects}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+    \item \textit{Extending Community Detection/Graph Clustering to Quantum Networks} (Primary researcher). Extending “No Free Lunch” theorems and community detection algorithms from classical graphs to quantum network structures.
+    \item \textit{Emergent Capabilities in Transformers}: Investigated Modern Hopfield Networks and neural associative memories to analyze emergent capabilities as model scale increases and their connection to Transformer architectures.
+    \item \textit{Mitigating Catastrophic Forgetting in LLMs}: Identified layer-level clustering patterns in LLMs post-continual learning and designed a switch network to mitigate catastrophic 
+    forgetting (Publication \ref{switch-cit}).
+\end{itemize}
+
+\textbf{Research with Professor Xu Chen} \hfill March 2023 -- February 2024\vspace{-5pt}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+    \item Developed a Physics-Informed Neural Network (PINN) using the Deep Galerkin Method (DGM) to model voltage and electric field from a charged circle/sphere inside a grounded box (code available upon request).
+    \item Work was adapted by Samsung engineers for use in internal modeling applications.
+    \item Built an operator estimator for RLC (Resistor–Inductor–Capacitor) circuits to generalize across arbitrary parameters.
+\end{itemize}
+% \textbf{Senior Thesis (Co-advised by Prof. Rayadurgam Srikant and Prof. Lav Varshney)} \hfill September 2025 -- Present
+% \begin{itemize}[itemsep=-4pt, parsep=4pt, leftmargin=0.25in]
+%     \item \textit{Limits of Knowledge Distillation in Large Language Models}:
+%     Developing an information-theoretic framework for knowledge distillation and model compression, deriving fundamental limits on student performance with an emphasis on LLMs
+% \end{itemize}
+
+% \vspace{-6pt}
+% \textbf{Research with Professor Lav Varshney} \hfill February 2024 -- Present
+
+% \textit{Current Projects}
+% \begin{itemize}[itemsep=-4pt, parsep=4pt, leftmargin=0.25in]
+%     \item \textbf{Two-stage retrieval in Transformers}: Developed a theoretical explanation for two-stage retrieval dynamics in Transformer attention via associative memory models
+
+%     \item \textbf{Visual redundancy in vision–language models}: Identified and rigorously justified redundancy in visual token representations, explaining empirical robustness and efficiency in VLMs (Publications: \ref{skip-it}, \ref{unmask}).
+
+%     \item \textbf{Multimodal federated learning (incoming collaboration, Jan. 2026)}: Planned collaboration with Argonne National Laboratory to design deep learning systems using federated learning to learn from multimodal, decentralized private data.
+% \end{itemize}
+
+% \vspace{-6pt}
+% \textit{Past Projects}
+% \begin{itemize}[itemsep=-4pt, parsep=4pt, leftmargin=0.25in]
+%     \item \textbf{Community detection in quantum networks} (Primary researcher): Extended classical no-free-lunch theorems and community detection guarantees to quantum network models, developing analogues of modularity and clustering objectives.
+
+%     \item \textbf{Emergent capabilities in Transformers}: Analyzed emergent behavior in Transformers through the lens of neural associative memory and Modern Hopfield Networks
+
+%     \item \textbf{Mitigating catastrophic forgetting in LLMs}: Identified layer-wise clustering structure induced by continual instruction learning and designed a switch network to reduce catastrophic forgetting (Publication: \ref{switch-cit}).
+% \end{itemize}
+
+% % \vspace{-6pt}
+% \textbf{Research with Professor Xu Chen} \hfill March 2023 -- February 2024
+% \begin{itemize}[itemsep=-2pt, parsep=2pt, leftmargin=0.25in] \item \textbf{Physics-Informed Neural Networks (PINNs)} \ Implemented the Deep Galerkin Method (DGM) to solve electrostatic Partial Differential Equations (PDEs) for complex boundary conditions (charged geometries in grounded enclosures). \item Code was subsequently adapted by Samsung engineers for internal R\&D applications. 
+% % \item \textbf{Operator Learning for Circuits} \ Built a neural operator estimator for RLC circuits, enabling parameter-agnostic generalization across arbitrary resistance, inductance, and capacitance values. 
+
+% \end{itemize}
+% \vspace{-3pt}
+% \pagebreak
+\section{Publications \& Presentations}
+{(Citations in reverse chronological order)}
+    \begin{enumerate}[leftmargin=0.25in, itemsep=-2pt]
+        \item \label{skip-it} Hartman, M.$^\dagger$, \textbf{Jayaraman V.A.}$^\dagger$, Choraria, M., Bhimaraju, A., \& Varshney, L.R. (2025). Skip-It? Theoretical Conditions for Layer Skipping in Vision-Language Models. Preprint \href{https://www.arxiv.org/abs/2509.25584}{\underline{arXiv:2509.25584}} \textit{(Under review for ICLR 2026)}
+        \item \label{unmask} Hartman, M.$^\dagger$, \textbf{Jayaraman, V.A.}$^\dagger$, Choraria, M., Bhimaraju, A., \& Varshney, L. R. (2025). Unmasking the functionality of early layers in VLMs \textit{ \underline{\href{https://excv-workshop.github.io/publication/unmasking-the-functionality-of-early-layers-in-vlms/}{(Presented: eXCV Workshop @ ICCV 2025)}}}
+        \item\label{abbvie}\textbf{Jayaraman, V.A.}, Dagommer, M. (2025). pADME Explainability and Uncertainty Quantification, Poster available upon request.
+        \item \label{switch-cit} Wu, X., Hartman, M.$^*$, \textbf{Jayaraman, V.A.}$^*$, \& Varshney, L. R. (2024). SwitchCIT: Switching for Continual Instruction Tuning of Large Language Models. Preprint \href{https://arxiv.org/abs/2407.11780}{\underline{arXiv:2407.11780}}. \textit{(Undergoing revision for JSTSP 2025)}
+        \item \label{apl} Bernstein, H.C., Bindel, S.R., McKibben, M.A., \& \textbf{Jayaraman, V.A.} (2024). Planning Model based on Projection Methodology Bayesian Discrete Extended (PM2-BDE) \textit{(Under internal review)}, Manuscript available upon request
+    \end{enumerate}
+    $^\dagger$ denotes joint-first author and $^*$ denotes equal contribution.
+% -------------------- INDUSTRY EXPERIENCE --------------------
+
+\section{Industry Experience}
+\textbf{Argonne National Laboratory} $|$ \textit{(Incoming) Research Intern} \hfill January 2026 -- August 2026\vspace{-5pt}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in] 
+\item Designing multimodal deep learning architectures to fuse high-dimensional molecular, imaging, and clinical data, enabling robust cancer biomarker discovery and optimized target population selection for precision medicine. 
+\item Implementing Privacy-Preserving Federated Learning (PPFL) protocols to orchestrate distributed training across disparate healthcare facilities without compromising data security. 
+\end{itemize}
+
+
+
+\textbf{AbbVie} $|$ \textit{Machine Learning Research Intern} \hfill May 2025 -- August 2025\vspace{-5pt}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in] \item Extended the SubgraphX Graph Neural Network (GNN) explainability framework to support multi-target regression and incorporate learned 3D molecular structure, overcoming limitations of the original classification-only method. 
+\item Validated results by extracting key molecular substructures correlated with metabolic stability, directly enhancing internal site-of-metabolism analysis tools. 
+\item Investigated Uncertainty Quantification methods, developing a novel approach utilizing metric learning (See Poster \ref{abbvie}). \end{itemize}
+
+\textbf{Johns Hopkins University Applied Physics Laboratory} $|$ \textit{Data Science Intern} \hfill June 2024 -- August 2024\vspace{-5pt}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in] 
+\item Implemented a Bayesian framework for Reliability Growth Planning (RGP) to model system failure intensities, enabling posterior estimation of reliability metrics during developmental testing. 
+\item Engineered a Retrieval-Augmented Generation (RAG) pipeline to query technical documentation 
+\item Authored a manuscript detailing the proposed Bayesian reliability methodology (Publication \ref{apl}). 
+\end{itemize}
+
+% \pagebreak
+\textbf{National Institute of Standards and Technology (NIST)} $|$ \textit{Research Intern} \hfill June 2023 -- August 2023\vspace{-5pt}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in] \item Engineered a text anomaly detection pipeline utilizing Cloze probabilities from a fine-tuned GPT-2 language model. \item Validated against outlier analysis done in dimensionally-reduced embedding spaces (e.g., via PCA/t-SNE). \end{itemize}
+
+\textbf{Brunswick i-JET Research Lab} $|$ \textit{Autonomous Simulation Intern} \hfill January 2023 -- May 2023\vspace{-5pt}
+% \begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+%     \item Utilized Robotic Operating System (ROS) to create maps using Simultaneous Localization and Mapping (SLAM).
+%     \item Utilized fluid dynamics to build an autonomous wake generator and used ROS to visualize and analyze data.
+% \end{itemize}
+\begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in] 
+\item Implemented Simultaneous Localization and Mapping (SLAM) within the Robot Operating System (ROS) to generate maps for autonomous navigation.
+\item Developed a simulation environment for an autonomous wake generator for real-time visualization and data analysis. 
+\end{itemize}
+
+% \pagebreak
+
+% \setcolumnwidth{0.45\textwidth, 0.65\textwidth}
+% \setlength{\columnsep}{1.15cm}
+% \begin{paracol}{2}
+\section{Teaching and Mentorship}
+    \textbf{Algorithms \& Models of Computation Classroom Assistant}\\ August 2025 -- Present\vspace{-5pt}
+    \begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+        \item Assist weekly in quiz and exam grading, and hold 2-hour-long office hours weekly.
+        \item Writing lecture notes on the connection between the WL graph isomorphism test and the expressivity of GNNs.
+    \end{itemize}
+    \textbf{Analog Signal Processing (ECE 210) Tutor (IEEE-HKN)}\\ August 2023 -- May 2024\vspace{-5pt}
+    \begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+        \item Provided 1-on-1 tutoring, created review slideshows/worksheets, and gave review lectures before midterms.
+    \end{itemize}
+    % COLUMN 1
+    
+    % -------------------- SKILLS --------------------
+    % \section{Skills \& Expertise}
+    % \textbf{Deep Learning}: PyTorch, TensorFlow\\
+    % \textbf{Natural Language}: NLTK, spaCy, LangChain\\
+    % \textbf{Software}: Python, C/C++, Java\\
+    % \textbf{Web/API}: Flask, Django, HTML/CSS, Javascript\\
+    % \textbf{DevOps}: Git, Docker\\
+    % \textbf{Low-Level}: x86 assembly, SystemVerilog\\
+    % \textbf{Robotics}: ROS, OpenCV\\
+    % \textbf{Research/Math}: \LaTeX\\
+    \section{Skills \& Expertise}
+
+    \noindent
+    \begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+        \textbf{Deep Learning}: PyTorch, TensorFlow & \textbf{DevOps}: Git, Docker \\
+        \textbf{Natural Language}: NLTK, spaCy, LangChain & \textbf{Low-Level}: x86 assembly, SystemVerilog \\
+        \textbf{Software}: Python, C/C++, Java & \textbf{Robotics}: ROS, OpenCV \\
+        \textbf{Web/API}: Flask, Django, HTML/CSS, Javascript & \textbf{Research/Math}: \LaTeX \\
+    \end{tabular}
+    
+    % -------------------- TEACHING --------------------
+    
+    % \section{Teaching and Mentorship}
+    % \textbf{Algorithms \& Models of Computation Classroom Assistant}\\ August 2025 -- Present\vspace{-5pt}
+    % \begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+    %     \item Assist weekly in quiz and exam grading and hold 2-hour-long office hours weekly.
+    %     \item Writing lecture notes on the connection between the WL graph isomorphism test and the expressivity of Graph Neural Networks.
+    % \end{itemize}
+    % \textbf{Analog Signal Processing (ECE 210) Tutor (IEEE-HKN)}\\ August 2023 -- May 2024\vspace{-5pt}
+    % \begin{itemize}[itemsep=-5pt, parsep=5pt, leftmargin=0.25in]
+    %     \item Provided 1-on-1 tutoring, created review slideshows/worksheets, and gave review lectures before midterms.
+    % \end{itemize}
+    
+    % -------------------- AWARDS --------------------
+    
+    \section{Grants \& Awards}
+    \begin{itemize}[itemsep=-3pt, parsep=5pt, leftmargin=0.25in]
+        \item Awarded grant for undergraduate research from the Office of Undergraduate Research (OUR) \hfill 2025
+        \item Accepted to  \href{https://events.ycombinator.com/ai-sus}{\underline{AI Startup School}} by YCombinator for gifted researchers. \hfill 2025
+        \item Awarded James Scholar at University of Illinois Urbana-Champaign \hfill 2023 - 2025
+        \item Inducted into Eta Kappa Nu (IEEE-HKN), an ECE Honors Society \hfill 2023
+        \item Inducted into Tau Beta Pi, the Engineering Honor Society \hfill 2023
+        % \item Selected for American Invitational Mathematics Examination (AIME) \hfill 2022
+        % \item Received the Illinois State Seal of Biliteracy in Spanish \hfill 2020
+    \end{itemize}
+    
+    
+    % \switchcolumn
+    
+    % COLUMN 2
+    % -------------------- Publications --------------------
+    
+    % \section{Publications \& Conferences}
+    % \begin{enumerate}[leftmargin=0.25in, itemsep=-2pt]
+    %     \item \label{skip-it} Hartman, M.$^\dagger$, \textbf{Jayaraman V.A.}$^\dagger$, Choraria, M., Bhimaraju, A., \& Varshney, L.R. (2025). Skip-It? Theoretical Conditions for Layer Skipping in Vision-Language Models. Preprint \href{https://www.arxiv.org/abs/2509.25584}{\underline{arXiv:2509.25584}} \textit{(Under review for ICLR 2026)}
+    %     \item \label{unmask} Hartman, M.$^\dagger$, \textbf{Jayaraman, V.A.}$^\dagger$, , Choraria, M., Bhimaraju, A., \& Varshney, L. R. (2025). Unmasking the functionality of early layers in VLMs \textit{ \underline{\href{https://excv-workshop.github.io/publication/unmasking-the-functionality-of-early-layers-in-vlms/}{(Presented: eXCV Workshop @ ICCV 2025)}}}
+    %     \item\label{abbvie}\textbf{Jayaraman, V.A.}, Dagommer, M. (2025). pADME Explainability and Uncertainty Quantification, Poster available upon request.
+    %     \item \label{switch-cit} Wu, X., Hartman, M.$^*$, \textbf{Jayaraman, V.A.}$^*$, \& Varshney, L. R. (2024). SwitchCIT: Switching for Continual Instruction Tuning of Large Language Models. Preprint \href{https://arxiv.org/abs/2407.11780}{\underline{arXiv:2407.11780}}. \textit{(Undergoing revision for JSTSP 2025)}
+    %     \item \label{apl} Bernstein, H.C., Bindel, S.R., McKibben, M.A., \& \textbf{Jayaraman, V.A.} (2024). Planning Model based on Projection Methodology Bayesian Discrete Extended (PM2-BDE) \textit{(Under internal review)}, Manuscript available upon request
+    % \end{enumerate}
+    % $^\dagger$ denotes joint-first author and $^*$ denotes equal contribution.
+    % -------------------- PROJECTS --------------------
+    
+    % \section{Projects}
+    % \textbf{RAG Chat-bot for ECE 391 (Computer Systems Engineering)}\\
+    % \textit{Python, LangChain, dash} \hfill July 2024 -- September 2024\vspace{-5pt}
+    % \begin{itemize}[leftmargin=0.25in, itemsep=-5pt, parsep=5pt]
+    %     \item Created a RAG chat-bot to search through ECE 391 project documents, citing the document title and page number.
+    %     \item Implemented cutting-edge RAG techniques such as parent-child text splitting and cross-encoder reranking.
+    % \end{itemize}
+    
+    % \textbf{Operating System}\\
+    % \textit{C, x86 assembly} \hfill March 2024 -- May 2024\vspace{-5pt}
+    % \begin{itemize}[leftmargin=0.25in, itemsep=-5pt, parsep=5pt]
+    %     \item Developed kernel for a Linux-based OS with interrupt-based device I/O support.
+    %     \item Implemented radix-2 paging, Round-Robin scheduling, and a file system capable of 4MB files.
+    %     \item Created a Linux shell for user command input of basic Linux shell commands.
+    % \end{itemize}
+    
+    % \textbf{Named Entity Highlighter | Chrome Extension}\\
+    % \textit{Javascript, Python, PyTorch, Django} \hfill July 2023 -- August 2023\vspace{-5pt}
+    % \begin{itemize}[leftmargin=0.25in, itemsep=-5pt, parsep=5pt]
+    %     \item Trained and implemented a state-of-the-art Named Entity Recognition (NER) AI model from scratch.
+    %     \item Developed a Chrome Extension to highlight and provide Wikipedia links to named entities on a web page.
+    % \end{itemize}
+    
+% \end{paracol}
+
+\end{document}
